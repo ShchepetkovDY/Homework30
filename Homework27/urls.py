@@ -18,14 +18,15 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-
+from ads.views.ad import main_view
 
 urlpatterns = [
-    path('users/', include("users.urls")),
+    path('user/', include("users.urls.user")),
     path('ads/', include("ads.urls.ad")),
     path('cat/', include("ads.urls.cat")),
-
+    path('', include("users.urls.location")),
     path('admin/', admin.site.urls),
+    path('', main_view)
 ]
 
 if settings.DEBUG:

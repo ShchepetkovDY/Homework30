@@ -1,4 +1,3 @@
-
 from django.urls import path
 
 from ads.views.cat import CatDetailView, CatListView, CatCreateView, CatUpdateView, CatDeleteView
