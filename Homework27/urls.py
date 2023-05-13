@@ -23,6 +23,7 @@ from ads.views.ad import main_view
 urlpatterns = [
     path('user/', include("users.urls.user")),
     path('ads/', include("ads.urls.ad")),
+    path('selection/', include("ads.urls.selection")),
     path('cat/', include("ads.urls.cat")),
     path('', include("users.urls.location")),
     path('admin/', admin.site.urls),
